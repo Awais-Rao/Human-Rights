@@ -861,6 +861,44 @@ ul.yellow-bullets li::marker {
     .development_img{
         width: 50%;        
     }
+    .point_bar{
+        width: 40%;
+    }
+    .development_title{
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    .development_points{
+        font-size: 12px !important;
+    }
+
+        /* ------------- News & Events --------------- */
+
+        .reading_title{
+        font-size: 25px;
+    }
+    .highlights::after,
+    .media::after {
+    height: 4px;
+    bottom: -7px;
+    }
+    .reading_heading{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .reading_description{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .calander{
+        font-size: 15px;
+        height: fit-content !important;
+        padding: 3px 0px 3px !important;
+    }
+    .month {
+        margin-top: -5px !important;
+    }
+    
 
 }
 
