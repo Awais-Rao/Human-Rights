@@ -446,6 +446,8 @@
     border: #1a2a56 1px solid;
     outline: #fbc014 solid 10px;
     position: relative !important;
+    display: flex;
+    align-items: end;
 }
 
 .first_achivment {
@@ -473,7 +475,9 @@
     position: relative;
 }
 
-.achivment_card_data {}
+.achivment_card{
+    overflow: hidden !important;
+}
 
 .achivment_card_heading::before {
     content: '';
@@ -697,6 +701,40 @@ ul.yellow-bullets li::marker {
     left: -30px;
 }
 
+.yellow_button{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.yellow_button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #201d4f;
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+.yellow_button:hover {
+    color: #fff !important;
+    font-weight: 500;
+    border-color: #201d4f;
+    transition: 0.5s ease-in;
+}
+   
+.yellow_button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+   
+.yellow_button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+
 
 
 
@@ -719,6 +757,9 @@ ul.yellow-bullets li::marker {
 
 .margin-md {
     height: 20vh;
+}
+.margin-xmd {
+    height: 25vh;
 }
 .margin-lg{
     height: 30vh;
@@ -759,6 +800,9 @@ ul.yellow-bullets li::marker {
 
     .margin-md {
         height: 7vh;
+    }
+    .margin-xmd {
+        height: 9vh;
     }
     .margin-lg{
         height: 10vh;
@@ -886,6 +930,10 @@ ul.yellow-bullets li::marker {
         font-size: 14px;
         line-height: 18px;
     }
+    .reading_button,
+    .faq_button{
+        font-size: 12px;
+    }
     .reading_description{
         font-size: 12px;
         line-height: 15px;
@@ -898,7 +946,30 @@ ul.yellow-bullets li::marker {
     .month {
         margin-top: -5px !important;
     }
-    
+
+    /* ================= Achivment ===================  */
+
+    .achivment_card_heading{
+    font-size: 23px;
+    }
+    .bullets{
+        font-size: 12px;
+    }
+
+    /* ================= FAQs ===================  */
+    .faq_title{
+        font-size: 27px;
+    }
+    .faq_title::after{
+        height: 4px;
+    }
+    .faq_points,
+    .report_points{
+        font-size: 13px;
+    }
+    .report_ul_title{
+        font-size: 17px;
+    }
 
 }
 
@@ -919,6 +990,9 @@ ul.yellow-bullets li::marker {
 
     .margin-md {
         height: 8vh;
+    }
+    .margin-xmd {
+        height: 10vh;
     }
     .margin-lg{
         height: 11vh;
@@ -1043,9 +1117,13 @@ ul.yellow-bullets li::marker {
     .reading_heading{
         font-size: 14px;
     }
+    .reading_button,
+    .faq_button{
+        font-size: 13px;
+    }
     .reading_description{
         font-size: 12px;
-        line-height: 15px;
+        line-height: 17px;
     }
     .calander{
         font-size: 15px;
@@ -1054,6 +1132,30 @@ ul.yellow-bullets li::marker {
     }
     .month {
         margin-top: -5px !important;
+    }
+
+
+    /* ================= Achivment ===================  */
+    .achivment_card_heading{
+    font-size: 25px;
+    }
+    .bullets{
+        font-size: 15px;
+    }
+
+    /* ================= FAQs ===================  */
+    .faq_title{
+        font-size: 29px;
+    }
+    .faq_title::after{
+        height: 5px;
+    }
+    .faq_points,
+    .report_points{
+        font-size: 13px;
+    }
+    .report_ul_title{
+        font-size: 18px;
     }
 
     
@@ -1087,8 +1189,11 @@ ul.yellow-bullets li::marker {
     .margin-md {
         height: 13vh;
     }
-    .margin-lg{
+    .margin-xmd {
         height: 15vh;
+    }
+    .margin-lg{
+        height: 18vh;
     }
 
     /* --------- Navbar ------------- */
@@ -1187,6 +1292,59 @@ ul.yellow-bullets li::marker {
         font-size: 13px !important;
     }
 
+       /* ------------- News & Events --------------- */
+
+       .reading_title{
+        font-size: 30px;
+    }
+    .highlights::after,
+    .media::after {
+    height: 4px;
+    bottom: -7px;
+    }
+    .reading_heading{
+        font-size: 17px;
+    }
+    .reading_button,
+    .faq_button{
+        font-size: 14px;
+    }
+    .reading_description{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .calander{
+        font-size: 19px;
+        height: fit-content !important;
+        padding: 5px 0px 5px;
+    }
+    .month {
+        margin-top: -8px !important;
+    }
+
+    /* ================= Achivment ===================  */
+    .achivment_card_heading{
+    font-size: 27px;
+    }
+    .bullets{
+        font-size: 17px;
+    }
+
+    /* ================= FAQs ===================  */
+    .faq_title{
+        font-size: 31px;
+    }
+    .faq_title::after{
+        height: 6px;
+    }
+    .faq_points,
+    .report_points{
+        font-size: 13px;
+    }
+    .report_ul_title{
+        font-size: 19px;
+    }
+
 
 
     
@@ -1207,8 +1365,11 @@ ul.yellow-bullets li::marker {
     .margin-md {
         height: 14vh;
     }
-    .margin-lg{
+    .margin-xmd {
         height: 16vh;
+    }
+    .margin-lg{
+        height: 19vh;
     }
 
 
@@ -1242,7 +1403,60 @@ ul.yellow-bullets li::marker {
     .development_points{
         font-size: 15px !important;
     }
-    
+
+       /* ------------- News & Events --------------- */
+
+       .reading_title{
+        font-size: 35px;
+    }
+    .highlights::after,
+    .media::after {
+    height: 4px;
+    bottom: -7px;
+    }
+    .reading_heading{
+        font-size: 19px;
+        line-height: 21px;
+    }
+    .reading_button,
+    .faq_button{
+        font-size: 15px;
+    }
+    .reading_description{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .calander{
+        font-size: 19px;
+        height: fit-content !important;
+        padding: 5px 0px 5px;
+    }
+    .month {
+        margin-top: -8px !important;
+    }
+
+     /* ================= Achivment ===================  */
+     .achivment_card_heading{
+        font-size: 30px;
+     }
+     .bullets{
+        font-size: 19px;
+    }
+
+    /* ================= FAQs ===================  */
+    .faq_title{
+        font-size: 41px;
+    }
+    .faq_title::after{
+        height: 6.5px;
+    }
+    .faq_points,
+    .report_points{
+        font-size: 14px;
+    }
+    .report_ul_title{
+        font-size: 21px;
+    }
 }
 
 
@@ -1261,13 +1475,12 @@ ul.yellow-bullets li::marker {
     .middle_section_description{
         font-size: 13px !important;
     }
-    .middle_section_button{
-        background-color: magenta !important;
-    }
     .development_img{
         width: 100%;        
     }
     .development_points{
         font-size: 17px !important;
     }
+
+    
 }
