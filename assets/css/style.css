@@ -96,7 +96,6 @@
     font-size: medium;
     font-weight: 300;
 }
-
 .nav-item {
     text-align: center !important;
     padding-left: 4px;
@@ -131,6 +130,7 @@
     height: 4px !important;
     border: 2px solid #fbc014;
     color: #fbc014;
+    background-color: #fbc014;
     opacity: 100%;
 }
 
@@ -577,6 +577,7 @@ ul.yellow-bullets li::marker {
     font-weight: 500 !important;
     position: relative;
     min-width: 150px;
+    cursor: pointer;
 }
 
 .footer_item::after {
@@ -587,6 +588,9 @@ ul.yellow-bullets li::marker {
     border-radius: 5px;
     background-color: #211e50;
     transform: rotate(90deg) translate(12px, -30px);
+}
+a.footer_item{
+    text-decoration: none !important;
 }
 
 .bottom_footer {
@@ -770,25 +774,16 @@ ul.yellow-bullets li::marker {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-/* @media screen and (max-width:280px) {
-
-    .margin-xsm {
-        height: 2vh;
-    }
-
-    .margin-sm {
-        height: 4vh;
-    }
-
-    .margin-md {
-        height: 10vh;
-    }
-
-} */
 
 
 /* For medium-small devices */
 @media screen and (min-width:281px) and (max-width:480px) {
+
+    .show-scroll {
+        bottom: rem;
+        right: 2rem;
+    }
+
 
     .margin-xsm {
         height: 1.5vh;
@@ -831,7 +826,7 @@ ul.yellow-bullets li::marker {
     }
 
     #wrapper {
-        display: none;
+        display: block;
     }
 
     .searchbar {
@@ -844,7 +839,9 @@ ul.yellow-bullets li::marker {
     }
 
     .silder_card_title {
-        font-size: 10px;
+        font-size: 12px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 
     .silder_card_icon {
@@ -852,7 +849,9 @@ ul.yellow-bullets li::marker {
     }
 
     .silder_card_desc {
-        font-size: 8px;
+        font-size: 10px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 
     .silder_card_btn {
@@ -885,13 +884,10 @@ ul.yellow-bullets li::marker {
         width: 80% !important;
     }
     .middle_section_title {
-        font-size: 15px;
+        font-size: 16px;
         }
     .middle_section_description{
-        font-size: 8px !important;
-    }
-    .middle_section_button{
-        font-size: 10px;
+        font-size: 9px !important;
     }
     .middle_section_title_div{
         margin-top: 5px;
@@ -900,7 +896,7 @@ ul.yellow-bullets li::marker {
         margin-top: -10px !important;
     }
     .middle_section_button{
-        font-size: 8px;
+        font-size: 10px;
     }
     .development_img{
         width: 50%;        
@@ -909,11 +905,11 @@ ul.yellow-bullets li::marker {
         width: 40%;
     }
     .development_title{
-        margin-top: 25px;
+        margin-top: 26px;
         font-size: 25px;
     }
     .development_points{
-        font-size: 12px !important;
+        font-size: 13px !important;
     }
 
         /* ------------- News & Events --------------- */
@@ -952,6 +948,9 @@ ul.yellow-bullets li::marker {
     .achivment_card_heading{
     font-size: 23px;
     }
+    .achivment_card_heading::before {
+        width: 150px !important;
+    }
     .bullets{
         font-size: 12px;
     }
@@ -969,6 +968,22 @@ ul.yellow-bullets li::marker {
     }
     .report_ul_title{
         font-size: 17px;
+    }
+    /* =============== Footer ================ */
+    .footer_item {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        min-width: 14%;
+        font-size: 12px;
+    }
+    .footer_item::after {
+        display: none;
+    }
+    .copy_top{
+        font-size: 9.5px;
+    }
+    .copy_bottom{
+        font-size: 8.5px;
     }
 
 }
@@ -1011,7 +1026,6 @@ ul.yellow-bullets li::marker {
 
     .nav_button {
         font-size: 17px !important;
-        background-color: greenyellow;
     }
 
     .searchbar_div {
@@ -1032,7 +1046,7 @@ ul.yellow-bullets li::marker {
     }
 
     .silder_card_title {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .silder_card_icon {
@@ -1040,11 +1054,11 @@ ul.yellow-bullets li::marker {
     }
 
     .silder_card_desc {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .silder_card_btn {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
 
     .silder_card {
@@ -1076,14 +1090,13 @@ ul.yellow-bullets li::marker {
         margin-top: 5px;
     }
     .middle_section_title {
-        font-size: 18px;
-        margin-bottom: -50px !important;
+        font-size: 20px;
     }
     .middle_section_description_div{
         margin-top: -10px !important;
     }
     .middle_section_description{
-        font-size: 9px !important;
+        font-size: 11px !important;
     }
     .middle_section_button{
         font-size: 8px;
@@ -1097,10 +1110,10 @@ ul.yellow-bullets li::marker {
     }
     .development_title{
         margin-top: 25px;
-        font-size: 25px;
+        font-size: 27px;
     }
     .development_points{
-        font-size: 12px !important;
+        font-size: 14px !important;
     }
 
 
@@ -1139,6 +1152,9 @@ ul.yellow-bullets li::marker {
     .achivment_card_heading{
     font-size: 25px;
     }
+    .achivment_card_heading::before {
+        width: 170px !important;
+    }
     .bullets{
         font-size: 15px;
     }
@@ -1158,6 +1174,22 @@ ul.yellow-bullets li::marker {
         font-size: 18px;
     }
 
+    /* =============== Footer ================ */
+    .footer_item {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        min-width: 15%;
+        font-size: 12px;
+    }
+    .footer_item::after {
+        display: none;
+    }
+    .copy_top{
+        font-size: 10px;
+    }
+    .copy_bottom{
+        font-size: 9px;
+    }
     
 
 }
@@ -1326,6 +1358,9 @@ ul.yellow-bullets li::marker {
     .achivment_card_heading{
     font-size: 27px;
     }
+    .achivment_card_heading::before {
+        width: 190px !important;
+    }
     .bullets{
         font-size: 17px;
     }
@@ -1343,6 +1378,17 @@ ul.yellow-bullets li::marker {
     }
     .report_ul_title{
         font-size: 19px;
+    }
+
+    /* =============== Footer ================ */
+    .footer_item {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        min-width: 14%;
+        font-size: 13px;
+    }
+    .footer_item::after {
+        transform: rotate(90deg) translate(12px, -10px);
     }
 
 
@@ -1439,6 +1485,9 @@ ul.yellow-bullets li::marker {
      .achivment_card_heading{
         font-size: 30px;
      }
+     .achivment_card_heading::before {
+        width: 210px !important;
+    }
      .bullets{
         font-size: 19px;
     }
@@ -1456,6 +1505,17 @@ ul.yellow-bullets li::marker {
     }
     .report_ul_title{
         font-size: 21px;
+    }
+
+    /* =============== Footer ================ */
+    .footer_item {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        min-width: 15%;
+        font-size: 15px;
+    }
+    .footer_item::after {
+        transform: rotate(90deg) translate(12px, -10px);
     }
 }
 
@@ -1481,6 +1541,14 @@ ul.yellow-bullets li::marker {
     .development_points{
         font-size: 17px !important;
     }
+    /* =============== Footer ================ */
+    .footer_item {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        min-width: 15%;
+    }
+    .footer_item::after {
+        transform: rotate(90deg) translate(12px, -10px);
+    }
 
-    
 }
