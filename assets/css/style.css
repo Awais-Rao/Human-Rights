@@ -1029,10 +1029,11 @@ a.footer_item{
         display: none;
     }
     .copy_top{
-        font-size: 9.5px;
+        font-size: 7px;
     }
     .copy_bottom{
-        font-size: 5px;
+        float: right;
+        font-size: 6px;
     }
 
 }
