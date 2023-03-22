@@ -13,6 +13,14 @@
     scroll-behavior: smooth;
 }
 
+
+
+
+                         /* ================ NEVBAR =================  */
+
+
+
+
 .fixed-top {
     top: -40px !important;
     transform: translateY(40px);
@@ -115,6 +123,14 @@
     font-family: cabin !important;
 }
 
+
+
+
+                      /* ================= What We Do ===================  */
+
+
+
+
 .section_title {
     text-align: center;
 }
@@ -133,6 +149,8 @@
     background-color: #fbc014;
     opacity: 100%;
 }
+
+/* ----------------- SLIDER ------------------ */
 
 .silder_card {
     text-align: center !important;
@@ -235,7 +253,7 @@
 
 
 
-
+                        /* ================= DEVELOPMENT sCHEME ===================  */
 
 
 
@@ -330,12 +348,7 @@
 
 
 
-
-
-/* .reading_section{
-    height: 100vh !important;
-} */
-
+                        /* ================= News & Events =================== */
 
 
 .reading_title {
@@ -436,6 +449,13 @@
 }
 
 
+
+
+                        /* ================= Achivment =================== */
+
+
+
+
 .achivement_section {
     background: url(../images/layout-30.jpg);
     background-size: cover !important;
@@ -496,6 +516,15 @@ li::marker {
     font-size: 22px;
     color: white;
 }
+
+
+
+
+
+                        /* ================= FAQs =================== */
+
+
+
 
 
 
@@ -563,6 +592,11 @@ ul.yellow-bullets li::marker {
 
 
 
+                        /* ================= FOOTER =================== */
+
+
+                        
+
 
 .top_footer {
     background-color: #fbc014;
@@ -607,7 +641,15 @@ a.footer_item{
     color: white;
 }
 
-/*========== SCROLL UP ==========*/
+
+
+
+                        /* ================= SCROLL UP =================== */
+
+
+
+
+
 .scrollup {
     position: fixed;
     right: 3rem;
@@ -636,7 +678,11 @@ a.footer_item{
 
 
 
-/* =================== Buttons ================= */
+                        /* =================== Buttons ================= */
+
+
+
+
 
 .blue_button{
     display: inline-block;
@@ -742,10 +788,7 @@ a.footer_item{
 
 
 
-
-
-
-
+                        /* ================= MARGINS =================== */
 
 
 
@@ -772,11 +815,17 @@ a.footer_item{
 
 
 
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
+
+                        /*==================== MEDIA QUERIES ====================*/
 
 
-/* For medium-small devices */
+
+                        
+
+        /*---------- For small devices ----------*/
+
+
+
 @media screen and (min-width:281px) and (max-width:480px) {
 
     .show-scroll {
@@ -991,8 +1040,10 @@ a.footer_item{
 
 
 
+         /*---------- For Medium devices ----------*/
 
-/* For medium devices */
+
+
 @media screen and (min-width:481px) and (max-width: 568px) {
 
     .margin-xsm {
@@ -1199,15 +1250,10 @@ a.footer_item{
 
 
 
+        /*---------- For Medium Large devices ----------*/
 
 
 
-
-
-
-
-
-/* For medium large devices */
 @media screen and (min-width:569px) and (max-width:768px) {
 
     .margin-xsm {
@@ -1397,7 +1443,11 @@ a.footer_item{
 }
 
 
-/* For large devices */
+
+         /*---------- For Large devices ----------*/
+
+
+
 @media screen and (min-width:769px) and (max-width:1024px) {
 
     .margin-xsm {
@@ -1518,6 +1568,12 @@ a.footer_item{
         transform: rotate(90deg) translate(12px, -10px);
     }
 }
+
+
+
+
+         /*---------- For Extra Large devices ----------*/
+
 
 
 
